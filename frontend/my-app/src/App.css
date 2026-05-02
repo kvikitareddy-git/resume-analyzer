@@ -1,0 +1,169 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🔥 ANIMATED BACKGROUND */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(-45deg, #6a5acd, #836fff, #ff7eb3, #00c9ff);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌙 DARK MODE */
+.container.dark {
+  background: linear-gradient(-45deg, #000, #111, #222, #333);
+}
+
+/* 💎 GLASS CARD */
+.card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,255,255,0.3);
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.5s ease;
+}
+
+/* ✨ ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* TEXT */
+.subtitle {
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* TOGGLE */
+.toggle {
+  text-align: right;
+}
+
+.toggle button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* 📄 UPLOAD */
+.upload {
+  display: block;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.upload input {
+  display: none;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  outline: none;
+}
+
+/* 🚀 BUTTON */
+.analyzeBtn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.analyzeBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff7eb3;
+}
+
+/* RESULT */
+.result {
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* 📊 PROGRESS */
+.progress {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(90deg, #00ff88, #00c9ff);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* ❌ MISSING BOX */
+.red {
+  background: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 12px;
+}
+
+/* 💡 SUGGESTIONS FIXED */
+.green {
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 12px;
+  color: #000; /* 👈 FIXED TEXT */
+}
+
+.green li {
+  color: #000;
+  font-weight: 500;
+}
+
+/* LIST */
+ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
